@@ -1,12 +1,18 @@
+import { extendTheme, ChakraProvider, Box, Text } from '@chakra-ui/react'
+import {Switch,Route,BrowserRouter} from 'react-router-dom'
+import Menu from './page/Menu';
 
 
 function App() {
   return (
-    <div>
-        <h1>
-          Welcome to my resturant
-        </h1>
-    </div>
+  
+      <ChakraProvider>
+        <BrowserRouter>   
+        <Switch>
+        <Route exact path ="/menu"><Menu/></Route>
+        </Switch>
+        </BrowserRouter>   
+      </ChakraProvider>
   );
 }
 
