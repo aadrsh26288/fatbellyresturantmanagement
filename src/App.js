@@ -9,7 +9,7 @@ function App() {
       <ChakraProvider>
         <BrowserRouter>   
         <Switch>
-        <Route exact path ="/menu"><Menu/></Route>
+        <Route exact path ="/"><Menu/></Route>
         </Switch>
         </BrowserRouter>   
       </ChakraProvider>
